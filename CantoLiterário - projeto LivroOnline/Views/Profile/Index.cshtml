@@ -1,0 +1,66 @@
+﻿@model UserDTO
+
+<div class="center" style="background-color: transparent;">
+    <div class="profileArea">
+        <a asp-action="Edit" asp-controller="Profile" style="position: absolute; right: 0;margin: 10px;">
+            <i style="font-size: 15pt;" class="fa-solid fa-gear"></i>
+        </a>
+        <div class="UserInfos">
+            <img src="~/Imagens/UsersImg/@Model?.ImgUrl" alt="">
+            <span>@Model?.Name</span>
+            <span><i style="color:yellow" class="fa-solid fa-star"></i> @Model?.AvarageVotes</span>
+            <div class="addInfos">
+                <ul>
+                    <li>
+                        <div>
+                            <i class="fa-solid fa-briefcase"></i>
+                            @if (Model?.Books != null)
+                            {
+                                <p>@Model?.Books?.Count
+                                </p>
+                            }
+                            else
+                            {
+                                <p>0</p>
+                            }
+
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="fa-solid fa-book-open-reader"></i>
+                            <p>0</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="fa-solid fa-user-plus"></i>
+                            @if (Model?.Follows != null)
+                            {
+                                <p>@Model?.Follows?.Count 0</p>
+                            }
+                            else
+                            {
+                                <p>0</p>
+                            }
+                            
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="about">
+            @if(@Model?.Bio != null)
+            {
+                <div class="bio">
+                    <p>
+                        @Model?.Bio
+                    </p>
+                </div>
+            }
+            
+
+        </div>
+    </div>
+</div>

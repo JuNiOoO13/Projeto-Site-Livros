@@ -1,0 +1,20 @@
+﻿@model List<Genders>
+@{
+}
+
+@if (Model.Count > 0)
+{
+    @foreach (var gender in Model)
+    {
+        <a class="genderElement" style="background-color:@gender.Color">
+            <span>@gender.Name</span>
+        </a>
+    }
+
+}
+else
+{
+    <h2>Não Encontrado</h2>
+}
+
+

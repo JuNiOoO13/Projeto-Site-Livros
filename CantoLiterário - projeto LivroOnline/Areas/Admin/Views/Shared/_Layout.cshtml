@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canto Literário - @ViewData["Title"] </title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration:none;
+            color:white;
+        }
+        .navBar {
+            width: 100%;
+            height: 5rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            background-color: black;
+            color: white;
+        }
+
+            .navBar .navElement a{
+                transition: color .2s ease;
+            }
+
+                .navBar .navElement:hover a {
+                    color: red;
+                }
+
+            .navBar ul {
+                list-style: none;
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                padding:0;
+                margin-bottom:0;
+            }
+
+            .navBar nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 10px;
+                height: 100%;
+            }
+
+            .navBar .navElement a {
+                font-size: 15pt;
+            }
+
+            .navBar .iconBtn {
+                color: white;
+                height: 2.5rem;
+                width: 2.5rem;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 15pt;
+                cursor: pointer;
+            }
+
+                .navBar .iconBtn:hover {
+                    background-color: rgba(255,255,255,0.3);
+                }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            margin-top: 7rem;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="navBar">
+            <nav>
+                <div class="adminLogo">
+                    <h2 style="color:rgb(139, 11, 11) ;">Admin</h2>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <div class="navElement">
+                                <a  asp-controller="Users" asp-action="Index">Contas</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div  class="navElement">
+                                <a  asp-controller="Roles" asp-action="Index">Permissões</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div  class="navElement">
+                                <a asp-area="Home" asp-controller="Home" asp-action="Index">Sair</a>
+                            </div>
+                        </li>
+                        <li>
+                            <partial name="_LoginPartial.cshtml"></partial>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+
+    </header>
+    <main role="main">
+        @RenderBody()
+    </main>
+
+
+   
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script>
+        var Dbid;
+        function ToggleVisible(id, dbid) {
+            Dbid = dbid
+            let save = document.getElementById(id);
+            let element = document.getElementById('center');
+            save.style.display = save.style.display == 'flex' ? 'none' : 'flex'
+            element.classList.toggle('filterBlur');
+        }
+
+        function DeleteUser() 
+        {
+            $.ajax({
+                type: "POST",
+                url: "/Admin/Users/Delete",
+                data: { userId: Dbid },
+
+                success: function (response) {
+                    location.reload()
+                },
+                error: function (xhr, status, error) {
+                    alert('Error Interno');
+                }
+            });
+        }
+        function DeleteRole() {
+            $.ajax({
+                type: "POST",
+                url: "/Admin/Roles/DeleteRole",
+                data: { id: Dbid },
+
+                success: function (response) {
+                    location.reload()
+                },
+                error: function (xhr, status, error) {
+                    alert('Error Interno');
+                }
+            });
+        }
+        function EditPermissionsScreen(id,userId) {
+            let element = document.getElementById(id);
+            if (element.style.display != 'flex') {
+                element.style.display = 'flex';
+
+                $.ajax({
+                    type: "POST",
+                    url: "/Admin/Users/UserRoles",
+                    data: { userId: userId },
+
+                    success: function (response) {
+                        element.innerHTML = response;
+                    },
+                    error: function (xhr, status, error) {
+                        alert('Error Interno');
+                    }
+                });
+            } else {
+                element.style.display = 'none';
+            }
+            
+        }
+
+    </script>
+    <script src="https://kit.fontawesome.com/4029ae22fe.js" crossorigin="anonymous"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canto Literário - @ViewData["Title"] </title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CantoLiterário___projeto_LivroOnline.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <div class="navBar">
+            <nav>
+
+                <div class="miniMenu">
+                    <ul style="margin:0">
+                        <li>
+                            <a class="iconBtn" asp-action="Index" asp-controller="Home">
+                                <i class="fa-solid fa-house"></i>
+
+                            </a>
+                        </li>
+                        <li>=
+                            <a class="lupa" asp-action="SearchScreen" asp-controller="Book" asp-route-searchString=" ">
+                                <i style="color:white; font-size:14pt" class="fa-solid fa-magnifying-glass"></i>
+                               
+                            </a>
+                            <div>
+
+                                <input type="text" name="searchString" id="searchField" placeholder="Pesquise Algo" />
+                                <button onclick="SearchBook('searchField')">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+
+                                
+                            </div>
+                        </li>
+                       
+                        <li>
+                            <a class="iconBtn" asp-action="UserLibBook" asp-controller="Book">
+                                <i class="fa-solid fa-book-bookmark"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <partial name="_LoginPartial.cshtml"></partial>
+                        </li>
+                    </ul>
+
+
+
+                </div>
+
+            </nav>
+        </div>
+
+    </header>
+    <main role="main" class="pb-3">
+        <div class="modais">
+            <partial name="_LoginModalPartial.cshtml"></partial>
+        </div>
+        @RenderBody()
+    </main>
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://kit.fontawesome.com/4029ae22fe.js" crossorigin="anonymous"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

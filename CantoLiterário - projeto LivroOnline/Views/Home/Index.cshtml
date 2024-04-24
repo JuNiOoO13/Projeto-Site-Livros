@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<Book>;
+
+<h style="text-align:center;color:white">Recomendados</h>
+<div class="center" style="justify-content:center;background-color:transparent">
+            
+            @foreach(var book in Model)
+            {
+
+            <a asp-action="BookPage" asp-controller="Book" asp-route-titulo="@book.Name" class="element">
+                    <div style="text-align: center;" class="rate">
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <span>@book.AvarageVotes</span>
+                    </div>
+                    <img src="./Imagens/capas/@book.ImgUrl" alt="">
+                    <div class="infos">
+                        <span class="nome">@book.Name</span>
+                        <span class="author">
+                            @book.Author.UserName
+                           </span>
+                    </div>
+                </a>
+            }
+                
+ </div>

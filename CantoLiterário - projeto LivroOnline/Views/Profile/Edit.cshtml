@@ -1,0 +1,102 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model UserDTO
+@inject UserManager<User> _userManager;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CantoLiterário___projeto_LivroOnline</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <div style="display: flex; justify-content: space-between;">
+        <a style="text-decoration:none" asp-action="UserScreen" asp-controller="Profile" asp-route-Id="@_userManager.GetUserId(User)" class="backButton">
+            <i style="color: rgb(161, 20, 34);" class="fa-solid fa-angle-left"></i>
+        </a>
+        <div class="backButton" onclick="ToggleIntarfaceId('saveChanges')">
+            <i style="color: rgb(54, 54, 194);" class="fa-regular fa-floppy-disk"></i>
+        </div>
+    </div>
+
+    <main style="margin-top:2rem">
+        <form asp-action="Edit" method="post" asp-controller="Profile" enctype="multipart/form-data" >
+            <div class="center" style="border-radius: 10px;padding:10px;color:white;flex-direction:column;align-items:center">
+                <div class="UserInfos" style="position: relative;display:flex;flex-direction:column;align-items:center">
+                    <div class="editImg">
+                        <input id="arquivo" type="file" name="img" accept="image/*">
+                        <label for="arquivo">
+                            <i style="font-size: 14pt;" class="fa-solid fa-pen-to-square"></i>
+                        </label>
+
+                        <img id="imageUser" src="~/Imagens/UsersImg/@Model.ImgUrl" alt=""/>
+                    </div>
+
+                    <p>Foto de Perfil</p>   
+                </div>
+                <div class="UserInfos" style="width: 90%;">
+                    <ul style="display: flex;flex-direction: column;gap:15px;">
+                        <li>
+                            <div class="li-Element">
+                                <div style="text-align: center;display:flex;flex-direction:column;gap:3px;padding:5px;">
+                                    <label asp-for="UserName">Nome</label>
+                                    <input style="text-align:center" asp-for="UserName" />
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-Element">
+                                <div style="text-align: center;display:flex;flex-direction:column;gap:3px;padding:5px;">
+                                    <label asp-for="Email"></label>
+                                    <input asp-for="Email" />
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-Element">
+                                <div style="text-align: center;display:flex;flex-direction:column;gap:3px;padding:5px;">
+                                    <label >Imagem de Fundo</label>
+                                    <input type="file" name="imgBackground" accept="img/*"/>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="li-Element">
+                                <div style="text-align: center;display:flex;flex-direction:column;gap:3px;padding:5px;">
+                                    <label asp-for="PhoneNumber">Telefone</label>
+                                    <input autocomplete="off" id="phoneText" type="text" asp-for="PhoneNumber" maxlength="15" />
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-Element">
+                                <div style="text-align: center;display:flex;flex-direction:column;padding:10px;">
+                                    <label asp-for="Bio">Bio</label>
+                                    <textarea asp-for="Bio" id="textBio" cols="30" rows="12"></textarea>
+                                    <p id="lenghtBio">0/300</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="saveChanges" id="saveChanges">
+                <p>Deseja Salvar As Alterações</p>
+                <div>
+                    <button type="submit">Sim</button>
+                    <button type="button" onclick="ToggleIntarfaceId('saveChanges')">Não</button>
+                </div>
+            </div>
+        </form>
+
+    </main>
+   
+</body>
+<script src="https://kit.fontawesome.com/4029ae22fe.js" crossorigin="anonymous"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+</html>

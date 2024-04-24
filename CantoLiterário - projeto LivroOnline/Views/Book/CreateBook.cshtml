@@ -1,0 +1,77 @@
+﻿@{
+    Layout = null;
+}
+@model BookDTO;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - CantoLiterário</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navBar" style="height: 3rem;justify-content: space-between;">
+            <div>
+                <a asp-action="UserLibBook" asp-controller="Book" class="backButton" style="background-color: transparent; color:white">
+                    <i class="fa-solid fa-angle-left"></i>
+                </a>
+
+            </div>
+            <div class="buttonsNav">
+                <button>Cancelar</button>
+                <button  onclick="ToggleIntarfaceId('saveChanges')">Salvar</button>
+
+            </div>
+        </nav>
+    </header>
+    <main style="margin-top: 3rem;">
+        <form asp-controller="Book" asp-action="CreateBook" method="post" enctype="multipart/form-data" >
+            <div class="center" style=" align-items: center;color:white; flex-direction: column;padding-top: 1rem;">
+                <div class="BookImg">
+                    <img id="imageUser" src="">
+                    <label id="arquivo" style="text-align: center;">
+                        <input type="file" name="img" accept="image/*" style="display: none;">
+                        <i class="fa-solid fa-image"></i>
+                        <p>Selecione uma imagem</p>
+                    </label>
+
+                </div>
+                <div class="bookInfos">
+                    <div class="Info">
+                        <label for="">Nome</label>
+                        <input asp-for="Name" type="text">
+                        <span asp-validation-for="Name"></span>
+                    </div>
+                    <div class="Info">
+                        <label asp-for="Description">Descrição</label>
+                        <textarea asp-for="Description" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="Info">
+
+                        <label>Gênero</label>
+                        <select asp-for="GendersId" asp-items="@ViewBag.BookGenders">
+                        </select>
+
+                    </div>
+
+                </div>
+                <p ></p>
+            </div>
+            <div class="saveChanges" id="saveChanges">
+                <p>Deseja Criar o Rascunho ?</p>
+                <div>
+                    <button type="submit">Sim</button>
+                    <button type="button" onclick="ToggleIntarfaceId('saveChanges')">Não</button>
+                </div>
+            </div>
+        </form>
+        
+    </main>
+    <script src="./js.js"></script>
+    <script src="https://kit.fontawesome.com/4029ae22fe.js" crossorigin="anonymous"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

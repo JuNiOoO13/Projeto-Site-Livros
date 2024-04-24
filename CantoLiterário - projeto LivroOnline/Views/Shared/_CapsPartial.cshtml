@@ -1,0 +1,34 @@
+﻿@model Book;
+
+@{
+    string classItem;
+}
+<div class="headers">
+    <img src="~/Imagens/capas/@Model.ImgUrl" alt="">
+    <div>
+        <h2>@Model.Name</h2>
+        <p>by @Model.Author.UserName</p>
+    </div>
+    <button onclick="ToggleVisible('allcaps')">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+</div>
+<div class="capsContainer">
+    <ul>
+        @foreach (var item in Model.bookContents)
+        {
+           
+             classItem = ViewBag.ContentId == item.BookContentId ? "listItem active" : "listItem";
+            <li>
+                <a asp-action="ReadPage" asp-controller="Book" asp-route-idTitulo="@Model.BookId" asp-route-capitulo="@item.Title" class="@classItem">
+                    <div class="">
+                    </div>
+                    <p>@item.Title</p>
+                </a>
+            </li>
+        }
+
+
+
+    </ul>
+</div>

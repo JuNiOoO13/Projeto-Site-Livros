@@ -1,0 +1,22 @@
+﻿@model List<BookDTO>;
+
+    <ul>
+        @foreach(var book in Model)
+        {
+            <li>
+                <div class="item" >
+                    <a asp-action="EditBookPage" asp-controller="Book" asp-route-titulo="@book.Name">
+					    <div style="display: flex; gap: 15px; ">
+						    <img src="~/Imagens/capas/@book.ImgUrl" alt="">
+						    <span>@book.Name</span>
+					    </div>
+                    </a>
+                <button onclick="SaveButton('bookConfig',true,@book.BookId)">
+                            <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <input type="hidden" id="status" value="@book.Publicado"/>
+                </div>
+            </li>
+        }
+        
+    </ul>

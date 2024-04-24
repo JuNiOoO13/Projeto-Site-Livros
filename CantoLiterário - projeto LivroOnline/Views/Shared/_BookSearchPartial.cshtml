@@ -1,0 +1,28 @@
+﻿@model List<BookDTO>
+@{
+}
+
+@if (Model.Count > 0)
+{
+    @foreach (var book in Model)
+    {
+        <a class="element" asp-action="BookPage" asp-controller="Book" asp-route-titulo="@book.Name">
+            <div style='text-align: center;' class='rate'>
+                <i class="fa-solid fa-star" style='color: #FFD43B;'></i>
+                <span>@book.AvarageVotes</span>
+            </div>
+            <img src="~/Imagens/capas/@book.ImgUrl" alt="">
+            <div class="infos" bis_skin_checked="1">
+                <span class="nome">@book.Name</span>
+                <span class="author">
+                    @book.Author?.UserName
+                </span>
+            </div>
+        </a>
+    }
+
+}
+else
+{
+    <h2>Não Encontrado</h2>
+}

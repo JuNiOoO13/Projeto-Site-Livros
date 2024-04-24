@@ -1,0 +1,59 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model RegisterDTO
+
+<style>
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+        -webkit-text-fill-color: black !important;
+    }
+</style>
+<form asp-action="Register" asp-controller="Account" method="post">
+    <div class="center" style="background-color: transparent;">
+        
+            <div class="InfosLogIn">
+            <div class="inputArea" style="padding-top:20px">
+                    
+                    <label asp-for="UserName">Nome</label>
+                    <div>
+                        <i class="fa-regular fa-user"></i>
+                        <input asp-for="UserName" type="text">
+                    </div>
+
+                </div>
+                <div class="inputArea">
+                    <label asp-for="Email">Email</label>
+                    <div>
+                        <i class="fa-regular fa-envelope"></i>
+                    <input asp-for="Email" type="email">
+                    </div>
+
+                </div>
+                <div class="inputArea">
+                    <label asp-for="Password"></label>
+                    <div>
+                        <i class="fa-solid fa-lock"></i>
+                    <input asp-for="Password" type="password">
+                    </div>
+
+                </div>
+                <div class="inputArea">
+                    <label asp-for="ConfirmPassword"></label>
+                    <div>
+                        <i class="fa-solid fa-lock"></i>
+                    <input asp-for="ConfirmPassword" type="password">
+                    </div>
+
+                </div>
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <button style="margin:15px 0 " class="btnLogin">Registrar</button>
+            <span>Já tem conta ? <a style="text-decoration:none;color:blue" asp-action="Login" asp-controller="Account">LogIn</a></span>
+            </div>
+    </div>
+</form>

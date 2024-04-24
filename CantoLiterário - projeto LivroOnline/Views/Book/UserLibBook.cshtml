@@ -1,0 +1,126 @@
+﻿<div class="center" id="center" style="border-radius: 10px;color:white">
+    <div class="mainContent">
+        <div class="headers">
+            <div onclick="ChangeContent(1)">
+                <span>Meus Livros</span>
+            </div>
+            <div onclick="ChangeContent(2)">
+                <span>Meus Rascunhos</span>
+            </div>
+            <div id=bar>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="content" id="contentBooks">
+    </div>
+    
+</div>
+<div class="bookConfig" id="bookConfig">
+    <ul>
+        <li>
+            <div class="listElement" onclick="ConfirmFunc('confirmRemove','bookConfig')" style="border-bottom:1px solid black ;">
+                <i style="color:red" class="fa-solid fa-trash"></i>
+                <span>Deletar</span>
+            </div>
+        </li>
+        <li>
+            <div class="listElement" id="publishButton" style="border-bottom:1px solid black ;">
+                <i style="color:green" class="fa-solid fa-upload"></i>
+                <span>Publicar</span>
+            </div>
+        </li>
+        <li>
+            <div class="listElement" style="border-bottom:1px solid black ;">
+                <i style="color:blue" class="fa-solid fa-eye"></i>
+                <span>Pre-Visualizar</span>
+            </div>
+        </li>
+        <li>
+            <div class="listElement" onclick="SaveButton('bookConfig',true)">
+                <i style="color:red" class="fa-solid fa-x"></i>
+                <span>Voltar</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="bookConfig" id="confirmRemove" style="z-index: 9999;">
+    <ul>
+        <li>
+            <div class="listElement" onclick="DeleteDbById()" style="border-bottom:1px solid black ;">
+                <i style="color:red" class="fa-solid fa-trash"></i>
+                <span>Confirmar</span>
+            </div>
+        </li>
+        <li>
+            <div class="listElement" onclick="ConfirmFunc('confirmRemove','bookConfig')" style="border-bottom:1px solid black ;">
+                <i style="color: green;" class="fa-solid fa-x"></i>
+                <span>Cancelar</span>
+            </div>
+        </li>
+    </ul>
+
+</div>
+<div class="bookConfig" id="confirmPublish" style="z-index: 9999;">
+    <ul>
+        <li>
+            <div class="listElement" onclick="PublishBook()" style="border-bottom:1px solid black ;">
+                <i style="color:blue"  class="fa-solid fa-upload"></i>
+                <span>Confirmar</span>
+            </div>
+        </li>
+        <li>
+            <div class="listElement" onclick="ConfirmFunc('confirmPublish','bookConfig')" style="border-bottom:1px solid black ;">
+                <i style="color: red;" class="fa-solid fa-x"></i>
+                <span>Cancelar</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="bookConfig" id="confirmUnPublish" style="z-index: 9999;">
+    <ul>
+        <li>
+            <div class="listElement" onclick="UnPublishBook()" style="border-bottom:1px solid black ;">
+                <i style="color:blue" class="fa-solid fa-upload"></i>
+                <span>Confirmar</span>
+            </div>
+        </li>
+        <li>
+            <div class="listElement" onclick="ConfirmFunc('confirmUnPublish','bookConfig')" style="border-bottom:1px solid black ;">
+                <i style="color: red;" class="fa-solid fa-x"></i>
+                <span>Cancelar</span>
+            </div>
+        </li>
+    </ul>
+</div>
+<script>
+    function ChangeContent(child) {
+        let bar = document.getElementById("bar");
+        let content = document.getElementById("contentBooks");
+        let controllerAction;
+        if (child == 1) {
+            bar.style.transform = "translateX(1%)";
+            controllerAction = "Book/GetUserBooks";
+        }
+
+        else {
+            bar.style.transform = "translateX(99%)";
+            controllerAction = "Book/GetUserBooksSketchs";
+        }
+
+
+        $.ajax({
+            type: "GET",
+            url: controllerAction,
+
+            success: function (response) {
+                content.innerHTML = response;
+            },
+            error: function (xhr, status, error) {
+                console.error(error);
+            }
+        });
+    }
+    ChangeContent(1);
+</script>

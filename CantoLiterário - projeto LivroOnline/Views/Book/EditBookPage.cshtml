@@ -1,0 +1,86 @@
+﻿@model BookDTO;
+
+
+<div id="center" class="center" style="justify-content: center;background-color:transparent;flex-direction: column;gap:20px">
+    <div class="bookInfosEdit">
+        <img src="~/Imagens/capas/@Model.ImgUrl" alt="">
+        <div>
+            <h3>@Model.Name</h3>
+            <button><i class="fa-solid fa-gear"></i>Editar</button>
+        </div>
+    </div>
+    <div class="capSection">
+
+        <div style="display: flex;align-items: center;justify-content: space-between;">
+            <p style=" margin: 5px 10px ;">Capitulos : @Model.bookContents?.Count
+            </p>
+            <button onclick="AddChap(@Model.BookId)" class="AddCapButton"><i style="color:black" class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="caps">
+            <ul id="CapsContent" style="overflow-y: hidden;">
+                @foreach(var caps in Model.bookContents)
+                {
+                    <li>
+                        <div class="capBox">
+                            <a asp-action="WritePage" asp-controller="Book" asp-route-titulo="@Model.Name" asp-route-contentId="@caps.BookContentId">
+                                <span>@caps.Title</span>
+                            </a>
+
+                            <button onclick="ToggleVisible('RemoveCap',@caps.BookContentId)"><i class="fa-solid fa-bars"></i></button>
+                        </div>
+                    </li>
+                }
+                
+                
+            </ul>
+
+        </div>
+        @if(Model.bookContents.Count > 0)
+        {
+            <button onclick="expandCap('CapsContent', this)" class="ShowMoreCaps">Mostrar mais</button>
+        }
+        
+
+    </div>
+    @if(Model.Publicado == 0)
+    {
+        <div class="publishBtn">
+            <form asp-action="PublishBook" asp-controller="Book" method="post">
+                <input name="bookId" value="@Model.BookId" type="hidden" />
+                <button type="submit">
+                    Publicar
+                </button>
+            </form>
+        </div>
+    }
+    else
+    {
+        <div class="publishBtn">
+            <form asp-action="UnPublishBook" asp-controller="Book" method="post">
+                <input name="bookId" value="@Model.BookId" type="hidden" />
+                <button type="submit">
+                    Despublicar
+                </button>
+            </form>
+           
+        </div>
+    }
+
+</div>
+
+<div class="bookConfig" id="RemoveCap">
+    <ul>
+        <li>
+            <div class="listElement" onclick="DeleteByIdCap()" style="border-bottom:1px solid black;">
+                <i style="color:red" class="fa-solid fa-trash"></i>
+                <span>Remover</span>    
+            </div>
+        </li>
+        <li>
+            <div class="listElement" onclick="ToggleVisible('RemoveCap')">
+                <i style="color:blue" class="fa-solid fa-x"></i>
+                <span>Voltar</span>
+            </div>
+        </li>
+    </ul>
+</div>

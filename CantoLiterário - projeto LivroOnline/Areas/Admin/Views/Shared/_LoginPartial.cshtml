@@ -1,0 +1,20 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+@{
+    User? userInfo = await UserManager.GetUserAsync(User);
+}
+@if (SignInManager.IsSignedIn(User))
+{
+    <form method="post" asp-controller="account" asp-action="logout">
+        <div style="width:auto" onclick="CloseModal('LoginModal')">
+            <img style="width:40px; height:40px; object-fit:cover; border-radius:50%" src="~/Imagens/UsersImg/@userInfo?.ImgUrl" />
+        </div>
+    </form>
+}
+else
+{
+    <a class="iconBtn" asp-action="Login" asp-controller="Account">
+        <i class="fa-solid fa-user"></i>
+    </a>
+}

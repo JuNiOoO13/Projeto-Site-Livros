@@ -1,0 +1,141 @@
+﻿
+@{
+    ViewData["Title"] = "BookPage";
+}
+@model Book;
+
+<div class="center" style="justify-content:center; color:white">
+    <div class="mainElement">
+        <img src="~/Imagens/capas/@Model.ImgUrl" class="bookImg" alt="">
+        <div class="details">
+            <div class="bookInfo">
+                <h4 style="color:rgb(150, 150, 150)">@Model.Author.NormalizedUserName</h4>
+                <h2>@Model.Name</h2>
+            </div>
+            <div class="authorInfo">
+                <img width=30 height=30 src="~/Imagens/UsersImg/@Model.Author.ImgUrl" class="userImg" alt="">
+                <a asp-action="UserScreen" asp-controller="Profile" asp-route-Id="@Model.AuthorId">
+                    <h4>@Model.Author.UserName</h4>
+                </a>
+                
+            </div>
+        </div>
+
+
+    </div>
+    <div>
+        <ul class="statsBook">
+            <li>
+                <div style="display: flex; gap:5px;">
+                    <i class="fa-regular fa-eye"></i>
+                    <span>Lidos</span>
+                </div>
+
+                <span style="font-weight: bold;">@Model.Lidos</span>
+
+            </li>
+            <li>
+                <div style="display: flex; gap:5px;">
+                    <i class="fa-regular fa-star"></i>
+                    <span>Votos</span>
+                </div>
+
+                <span style="font-weight: bold;">@Model.Votes</span>
+
+            </li>
+            <li style="border:none">
+                <div style="display: flex; gap:5px;">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>Capitulos</span>
+                </div>
+
+                <span style="font-weight: bold;">@Model.bookContents?.Count</span>
+
+            </li>
+
+        </ul>
+    </div>
+
+    @* <div class="genders">
+        <ul>
+            <li>
+                <div style="background-color:#1C6F65;" class="box">
+                    <span>Complete</span>
+                </div>
+            </li>
+            <li>
+                <div style="background-color: #9E1D42;" class="box">
+                    <span>Mature</span>
+                </div>
+            </li>
+        </ul>
+    </div> *@
+
+    <div class="allGenders">
+        <ul>
+            <li>
+                <div class="genderType" style="background-color:@Model.Genders?.Color">
+                    <span>@Model.Genders?.Name</span>
+                </div>
+            </li>
+
+
+        </ul>
+    </div>
+
+    @if (Model.Description != null)
+    {
+        <div class="description">
+            <p id="textArea">
+                @Model.Description
+            </p>
+
+            <button id="buttonDescription">Ler Mais</button>
+        </div>
+    }
+    
+    <div class="chapters" id="chapters">
+        <div class="infos">
+            <div>
+                <i class="fa-solid fa-book-open"></i>
+                <span><span>@Model.bookContents?.Count</span> Capitulos</span>
+            </div>
+            <button onclick="expandCapSection('chapters', this)" style="color:#9E1D42">Ver Mais</button>
+        </div>
+        <div class="chaptersList" id="chaptersList">
+            <ul>
+                @if(Model.bookContents != null)
+                {
+                    @foreach (var content in Model.bookContents)
+                    {
+                        <li>
+                            <a asp-action="ReadPage" asp-controller="Book" asp-route-idTitulo="@Model.BookId" asp-route-capitulo="@content.Title" class="listElement">
+                                <div style="display: inline">
+                                    <span>@content.Title</span>
+                                </div>
+
+                                <span>@content.Date.ToShortDateString()</span>
+                            </a>
+                        </li>
+
+                    }
+                }
+               
+               
+            </ul>
+        </div>
+    </div>
+    <div class="startReadBtn">
+        @if(Model.bookContents?.FirstOrDefault() != null){
+            <a asp-action="ReadPage" asp-controller="Book" asp-route-idTitulo="@Model.BookId" asp-route-capitulo="@Model.bookContents.FirstOrDefault().Title">Iniciar Leitura</a>
+        }
+        else
+        {
+            <a>Sem Capítulos</a>
+        }
+
+        <button>
+            <i class="fa-solid fa-plus"></i>
+        </button>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+﻿@model LoginDTO
+
+<style>
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+        -webkit-text-fill-color: black !important;
+    }
+</style>
+<form asp-action="Login" asp-controller="Account" method="post">
+    <div class="center" style="padding:20px; background-color: transparent;">
+
+        <div class="InfosLogIn">
+            <div class="inputArea" style="padding-top:20px">
+
+                <label asp-for="UserName">Nome</label>
+                <div>
+                    <i class="fa-regular fa-user"></i>
+                    <input asp-for="UserName" type="text">
+                </div>
+
+            </div>
+            <div class="inputArea">
+                <label asp-for="Password"></label>
+                <div>
+                    <i class="fa-solid fa-lock"></i>
+                    <input asp-for="Password" type="password">
+                </div>
+
+            </div>
+            <div style="display:flex; gap:10px;">
+                
+                <div >
+                    <input asp-for="RememberMe" type="checkbox">
+                </div>
+                <label asp-for="RememberMe"></label>
+
+            </div>
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <button type="submit" class="btnLogin">Logar</button>
+            <span>Não tem conta ? <a style="text-decoration:none; color:blue;" asp-action="Register" asp-controller="Account">Registre-se</a></span>
+        </div>
+    </div>
+</form>

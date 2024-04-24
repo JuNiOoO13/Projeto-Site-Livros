@@ -1,0 +1,163 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CantoLiterário___projeto_LivroOnline
+build_property.RootNamespace = CantoLiterário___projeto_LivroOnline
+build_property.ProjectDir = C:\Users\junio\source\repos\CantoLiterário - projeto LivroOnline\CantoLiterário - projeto LivroOnline\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\junio\source\repos\CantoLiterário - projeto LivroOnline\CantoLiterário - projeto LivroOnline
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Areas/Admin/Views/Roles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUm9sZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Areas/Admin/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Areas/Admin/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Areas/Admin/Views/Shared/_PermissionsContainerPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9QZXJtaXNzaW9uc0NvbnRhaW5lclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Areas/Admin/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/Book/BookPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xCb29rUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/Book/CreateBook.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xDcmVhdGVCb29rLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/Book/EditBookPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xFZGl0Qm9va1BhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/Book/ReadPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xSZWFkUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/Book/SearchScreen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xTZWFyY2hTY3JlZW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/Book/UserLibBook.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xVc2VyTGliQm9vay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/Book/WritePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xXcml0ZVBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/Profile/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/Profile/UserScreen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxVc2VyU2NyZWVuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/Shared/_BookSearchPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Cb29rU2VhcmNoUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/Shared/_BooksUserPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Cb29rc1VzZXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/Shared/_CapsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXBzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/Shared/_GendersSearchPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9HZW5kZXJzU2VhcmNoUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/Shared/_LoginModalPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbk1vZGFsUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/Shared/_UserSearchPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyU2VhcmNoUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-x6w7dy8d0n
+
+[C:/Users/junio/source/repos/CantoLiterário - projeto LivroOnline/CantoLiterário - projeto LivroOnline/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-y50kvcpy9g

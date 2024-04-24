@@ -1,0 +1,282 @@
+﻿
+@model ContentDTO;
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ler</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        @@keyframes loadingAnim
+        {
+            0% {
+            transform: rotate(0deg);
+            }
+
+            100% {
+            transform: rotate(360deg);
+            }
+        }
+
+
+        .navBar {
+            background-color: black;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9999;
+            width: 100%;
+        }
+
+            .navBar nav {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                align-items: center;
+            }
+
+            .navBar .SaveButton {
+                display: flex;
+                margin: 10px;
+                gap:10px;
+                align-items:center;
+            }
+
+        .SaveButton button {
+            background-color: green;
+            border: none;
+            padding: 5px;
+            border-radius: 10px;
+            color: white;
+            transition: box-shadow 0.2s ease-in-out;
+            cursor: pointer;
+        }
+
+            .SaveButton .loading{
+                color: blue;
+                border:2px solid;
+                border-bottom-color:transparent;
+                border-radius:50%;
+                width:1rem;
+                height:1rem;
+                animation: loadingAnim 1s forwards infinite;
+                display:none;
+            }
+
+            .SaveButton button:active {
+                box-shadow: inset 4px 3px 7px white;
+            }
+
+        .navBar .backButton {
+            display: flex;
+            margin: 10px;
+            gap: 5px;
+            color:white;
+            text-decoration:none;
+        }
+
+            .navBar .backButton i {
+                font-size: 25pt;
+            }
+
+        .center {
+            margin-top: 5rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+            .center .Headers h1 {
+                position: relative;
+                outline: none;
+                border: none;
+            }
+
+                .center .Headers h1::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    width: 90vw;
+                    transform: translateX(-50%) translateY(10px);
+                    left: 50%;
+                    background-color: rgb(136, 136, 136);
+                    height: 2px;
+                }
+
+            .center .WriteSpace {
+                margin: 3rem;
+                width: 90%;
+                padding: 10px;
+            }
+
+                .center .WriteSpace .WhiteSpace {
+                    height: 300px;
+                }
+
+        .WriteSpace p {
+            border: none;
+            outline: none;
+            margin-bottom: 1rem;
+        }
+
+       
+        
+    </style>
+</head>
+<body style="background-color: white;">
+    <header>
+        <div class="navBar" style="color:white">
+            <nav>
+                <a class="backButton" asp-action="EditBookPage" asp-controller="Book" asp-route-titulo="@Model?.Book?.Name">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <div>
+                        <p style="font-weight: bold;">@Model?.Title</p>
+                        <p>@Model?.Book?.Name</p>
+                    </div>
+                </a>
+                <div class="SaveButton">
+                    <div id="loading" class="loading"></div>
+                    <p style="color:green;display:none" id="result">Salvo</p>
+                    <button onclick="SaveData()">Salvar</button>
+                    <input type="hidden" value="@Model?.BookContentId" id="idContent"/>
+                </div>
+
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <div class="center">
+            <div class="Headers">
+                <h1 contenteditable="true" id="title">@Model?.Title</h1>
+            </div>
+            <div class="WriteSpace">
+                <div id="WriteSpace">
+                    @if(Model?.Lines?.Count > 0)
+                    {
+                        foreach(var line in Model.Lines)
+                        {
+                            <p contenteditable="true">@line.Content</p>
+                        }
+                    }
+                    else
+                    {
+                        <p contenteditable="true"></p>
+                    }
+                      
+                    
+                </div>
+                <div class="WhiteSpace" id="WhiteSpace">
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
+<script src="https://kit.fontawesome.com/4029ae22fe.js" crossorigin="anonymous"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+    const writeSpace = document.getElementById('WriteSpace');
+    const whiteSpace = document.getElementById('WhiteSpace');
+    var linhaAtual = 0;
+    writeSpace.addEventListener('keydown', function (event) {
+        let listP = writeSpace.getElementsByTagName('p');
+        if (event.keyCode == 13) {
+            linhaAtual += 1;
+            event.preventDefault()
+            writeSpace.innerHTML += '<p contenteditable="true"></p>';
+            let lastP = listP[linhaAtual];
+            lastP.focus();
+        }
+        else if (event.keyCode == 8 && listP[linhaAtual].textContent.length <= 0 && linhaAtual > 0) {
+            listP[linhaAtual - 1].focus()
+            listP[linhaAtual].remove();
+            linhaAtual -= 1;
+        }
+        else if (event.keyCode == 38 && listP[linhaAtual - 1]) {
+            linhaAtual -= 1;
+            listP[linhaAtual].focus();
+        }
+        else if (event.keyCode == 40 && listP[linhaAtual + 1]) {
+            console.log(linhaAtual)
+            linhaAtual += 1;
+            listP[linhaAtual].focus();
+        }
+        else if (event.keyCode == 9) {
+            event.preventDefault();
+            let line = listP[linhaAtual];
+            line.textContent += "\u00A0\u00A0\u00A0";
+            var evento = new KeyboardEvent('keydown', {
+                key: 'Tab',
+                keyCode: 13,
+                which: 13,
+                bubbles: true,
+                cancelable: true
+            });
+
+        }
+    })
+    writeSpace.addEventListener('click', function () {
+        let listP = writeSpace.getElementsByTagName('p');
+        let elementFocus = document.activeElement;
+        for (let i = 0; i < listP.length; i++) {
+            if (listP[i] == elementFocus) {
+                linhaAtual = i;
+                break
+            }
+        }
+        console.log(linhaAtual)
+    })
+    whiteSpace.addEventListener('click', function () {
+        let listP = writeSpace.getElementsByTagName('p');
+        let lastP = listP[listP.length - 1];
+        lastP.focus();
+    });
+
+    function SaveData() 
+    {
+        let loading = document.getElementById('loading');
+        let textSaved = document.getElementById('result');
+        let writeContent = document.getElementById('WriteSpace').getElementsByTagName('p');
+        let line;
+        let content = {
+            Title : document.getElementById('title').textContent,
+            Lines : [],
+            BookContentId: document.getElementById('idContent').value
+        }
+        textSaved.display = 'none';
+        loading.style.display = 'block';
+
+        
+        for (let i = 0; i < writeContent.length;i++)
+        {
+            line = { Content: writeContent[i].textContent };
+            content.Lines.push(line);
+        }
+        $.ajax({
+            type: "POST",
+            url: "/Book/SaveWritePage",
+            data: content,
+
+            success: function (response) {
+                loading.style.display = 'none';
+                textSaved.style.display = 'block';
+                textSaved.textContent = response
+            },
+            error: function (xhr, status, error) {
+                console.error(error);
+            }
+        });
+    }
+</script>

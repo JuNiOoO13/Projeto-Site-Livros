@@ -1,0 +1,417 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CantoLiterário - projeto LivroOnline.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CantoLiterário - projeto LivroOnline.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersBackground\\CantoLiterario.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\UsersBackground\\CantoLiterario.jpg"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersBackground\\Junior.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\UsersBackground\\Junior.jpg"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersBackground\\defaultBackground.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\UsersBackground\\defaultBackground.jpg"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersBackground\\fundo.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\UsersBackground\\fundo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersImg\\Admin.png",
+      "PackagePath": "staticwebassets\\Imagens\\UsersImg\\Admin.png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersImg\\Canto Literário.png",
+      "PackagePath": "staticwebassets\\Imagens\\UsersImg\\Canto Literário.png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersImg\\CantoLiterario.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\UsersImg\\CantoLiterario.jpg"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersImg\\CantoLiterario.png",
+      "PackagePath": "staticwebassets\\Imagens\\UsersImg\\CantoLiterario.png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersImg\\Canto_Literario.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\UsersImg\\Canto_Literario.jpg"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersImg\\Canto_Literario.png",
+      "PackagePath": "staticwebassets\\Imagens\\UsersImg\\Canto_Literario.png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersImg\\Canto_Literário.png",
+      "PackagePath": "staticwebassets\\Imagens\\UsersImg\\Canto_Literário.png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersImg\\Claudevan .png",
+      "PackagePath": "staticwebassets\\Imagens\\UsersImg\\Claudevan .png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersImg\\Claudevan.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\UsersImg\\Claudevan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersImg\\Jose.png",
+      "PackagePath": "staticwebassets\\Imagens\\UsersImg\\Jose.png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersImg\\Junior.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\UsersImg\\Junior.jpg"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersImg\\Junior.png",
+      "PackagePath": "staticwebassets\\Imagens\\UsersImg\\Junior.png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersImg\\Venucia.png",
+      "PackagePath": "staticwebassets\\Imagens\\UsersImg\\Venucia.png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersImg\\c123.png",
+      "PackagePath": "staticwebassets\\Imagens\\UsersImg\\c123.png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersImg\\claudevan.png",
+      "PackagePath": "staticwebassets\\Imagens\\UsersImg\\claudevan.png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersImg\\claudevanLogo.jpeg",
+      "PackagePath": "staticwebassets\\Imagens\\UsersImg\\claudevanLogo.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersImg\\junior2.png",
+      "PackagePath": "staticwebassets\\Imagens\\UsersImg\\junior2.png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersImg\\test')  INSERT INTO BOOK (Name)   VALUES('TEST').png",
+      "PackagePath": "staticwebassets\\Imagens\\UsersImg\\test')  INSERT INTO BOOK (Name)   VALUES('TEST').png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersImg\\test.png",
+      "PackagePath": "staticwebassets\\Imagens\\UsersImg\\test.png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\UsersImg\\test001.png",
+      "PackagePath": "staticwebassets\\Imagens\\UsersImg\\test001.png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\capas\\Classroomoftheelite.png",
+      "PackagePath": "staticwebassets\\Imagens\\capas\\Classroomoftheelite.png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\capas\\Harry Potter .png",
+      "PackagePath": "staticwebassets\\Imagens\\capas\\Harry Potter .png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\capas\\Harry Potter 2.png",
+      "PackagePath": "staticwebassets\\Imagens\\capas\\Harry Potter 2.png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\capas\\HarryPotter.png",
+      "PackagePath": "staticwebassets\\Imagens\\capas\\HarryPotter.png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\capas\\MushokuTensei.png",
+      "PackagePath": "staticwebassets\\Imagens\\capas\\MushokuTensei.png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\capas\\Nosei.png",
+      "PackagePath": "staticwebassets\\Imagens\\capas\\Nosei.png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\capas\\ReZero.png",
+      "PackagePath": "staticwebassets\\Imagens\\capas\\ReZero.png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\capas\\Solo Leveling.png",
+      "PackagePath": "staticwebassets\\Imagens\\capas\\Solo Leveling.png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\capas\\SoloLeveling.png",
+      "PackagePath": "staticwebassets\\Imagens\\capas\\SoloLeveling.png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\capas\\TalesofDemonsandGodsTDG.png",
+      "PackagePath": "staticwebassets\\Imagens\\capas\\TalesofDemonsandGodsTDG.png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\capas\\Test.png",
+      "PackagePath": "staticwebassets\\Imagens\\capas\\Test.png"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\capas\\capa.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\capas\\capa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\capas\\capaharry.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\capas\\capaharry.jpg"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\Imagens\\logo\\logo.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\logo\\logo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\junio\\source\\repos\\CantoLiterário - projeto LivroOnline\\CantoLiterário - projeto LivroOnline\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CantoLiterário - projeto LivroOnline.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CantoLiterário - projeto LivroOnline.props",
+      "PackagePath": "build\\CantoLiterário - projeto LivroOnline.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CantoLiterário - projeto LivroOnline.props",
+      "PackagePath": "buildMultiTargeting\\CantoLiterário - projeto LivroOnline.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CantoLiterário - projeto LivroOnline.props",
+      "PackagePath": "buildTransitive\\CantoLiterário - projeto LivroOnline.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,109 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model UserDTO;
+@inject UserManager<User> _userManager;
+@{
+}
+<style>
+    main.pb-3{
+        padding:0 !important;
+        margin-top:5rem !important;
+    }
+     @@media(min-width: 1200px) 
+        {
+            /*Tela Usuario Outros*/
+            .MainContainer .Infos{
+                transform: none;
+            }
+            .MainContainer .background img{    
+            width: 100%;
+            height: calc(100% - 5rem);
+            border: none;
+            z-index: -1;
+            position: absolute;
+            top:5rem;
+            left: 0;
+            }   
+            main .center{
+                margin-top: 15rem;
+                border-radius: 50px 50px 0px 0px;
+                padding: 15px;
+                height: calc(100vh - 15rem);
+                width: 35%;
+            }
+            .Infos .icons .description{
+                width: 20rem;
+                border-radius: 20px;
+            }
+            .Infos .icons{
+                gap:20px;
+            }
+        }
+</style>
+<div class="center">
+    <div class="MainContainer">
+        <div class="background">
+            
+            @if (@Model.BackgroundUrl != null)
+            {
+                <img src="~/Imagens/UsersBackground/@Model.BackgroundUrl" alt="">
+            }
+            else
+            {
+                <img src="~/Imagens/UsersBackground/defaultBackground.jpg" alt="">
+            }
+        </div>
+        <div class="Infos">
+            @if (Model.Id == _userManager.GetUserId(User))
+            {
+               <a asp-action="Edit" asp-controller="Profile" style="position: absolute;top:1rem;right: 0;margin: 10px;">
+                <i style="font-size: 15pt;" class="fa-solid fa-gear"></i>
+               </a> 
+            }
+            
+            <div class="userImg">
+                <img src="~/Imagens/UsersImg/@Model.ImgUrl" alt="">
+            </div>
+            <div class="icons">
+                <p style="text-align: center;">@Model.UserName</p>
+                <div>
+                    <ul>
+                        <li>
+                            <div>
+                                <i class="fa-solid fa-briefcase"></i>
+                                <p>@Model.Books?.Count</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="fa-solid fa-user-plus"></i>
+                                <p>@Model.Followers?.Count</p>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div>
+                                <i class="fa-solid fa-star"></i>
+                                <p>@Model.Avalia</p>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+                @if(Model.Id != _userManager.GetUserId(User))
+                {
+                    @if (Model.Followers?.Where(f => f.Id == _userManager.GetUserId(User)).FirstOrDefault() != default)
+                    {
+                        <a asp-action="UnFollow" asp-controller="Profile" asp-route-Id="@Model.Id" style="background-color:rgb(100,100,100)" class="followBtn"><i class="fa-solid fa-minus"></i> UnFollow</a>
+                    }
+                    else
+                    {
+                        <a asp-action="Follow" asp-controller="Profile" asp-route-Id="@Model.Id" class="followBtn"><i class="fa-solid fa-plus"></i> Follow</a>
+                    }
+                }
+                
+                
+                <p class="description">@Model.Bio</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CantoLiterário - projeto LivroOnline.props" />
+</Project>

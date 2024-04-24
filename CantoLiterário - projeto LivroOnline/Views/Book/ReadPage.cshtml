@@ -1,0 +1,156 @@
+﻿@model ContentDTO;
+@{
+    int cont = 1;
+}
+<div class="center" style="flex-direction: column; align-items: center;">
+    <div style="width: 100%;">
+        <div class="miniNavBar">
+            <button onclick="ShowAllCaps('allcaps',@Model.BookId,@Model.BookContentId)">
+                <div>
+                    <p style="font-size: 12pt;">@Model.Title</p>
+                    <p style="font-size: 10pt; color:rgb(197, 197, 197)">@Model.Book.Author.UserName</p>
+                </div>
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+        </div>
+        <div class="book-user_infos">
+            <h2>@Model.Title</h2>
+            <div>
+                <ul>
+                    <li>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <span style="margin-left:2px ;">@Model.AvarageVotes</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="fa-solid fa-comments"></i>
+                            <span style="margin-left:2px ;">@Model.comments?.Count</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <img src="~/Imagens/UsersImg/@Model.Book.Author.ImgUrl" alt="">
+            <p style="color:rgb(153, 153, 153)">@Model.Book.Author.UserName</p>
+
+        </div>
+    </div>
+    <div class="textContainer">
+        @if(Model.Lines != null)
+        {
+            @foreach (var line in Model.Lines)
+            {
+                <p>@line.Content</p>
+            }
+
+        }
+        else
+        {
+            <p>Esse livro não tem conteudo ainda</p>
+        }
+
+        
+       
+    </div>
+    @if(Model.ProxName != null)
+    {
+        <a asp-action="ReadPage" asp-controller="Book" asp-route-idTitulo="@Model.BookId" asp-route-capitulo="@Model.ProxName" class="proxCap">
+            Proximo Capitulo
+        </a>
+    }
+    else
+    {
+        <a style="background-color: rgb(68, 4, 4,0.4)" class="proxCap">
+            Último Cápitulo Alcançado 
+        </a>
+    }
+
+    <div class="commentsContainer">
+        <div class="writeComment">
+            
+            <input type="text" placeholder="Escreva Seu Comentario" id="comment" autocomplete="false">
+            <input type="hidden" id="idContent" value="@Model.BookContentId"/>
+            <button onclick="writeComment()"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+        @if(Model.comments != null)
+        {
+            <div class="comments">
+                <ul>
+                    @foreach (var item in Model.comments)
+                    {
+                        if(item.CommentId == null)
+                        {
+                            <li>
+                                <div class="comment">
+                                    <div class="headerContent">
+                                        <img src="~/Imagens/UsersImg/@item.User?.ImgUrl" alt="">
+                                        <p>@item.User?.UserName</p>
+                                    </div>
+                                    <div>
+                                        <p>@item.Mensagem</p>
+                                    </div>
+
+                                    <div class="addInfos" style="flex-direction:column; align-items:start;width:100%">
+                                        <button onclick="ToggleVisibleNoBlur('reply-@cont')" style="cursor:pointer">Responder</button>
+                                        <div class="writeReply" id="reply-@cont" bis_skin_checked="1" style="width:100%">
+                                            <input type="text" placeholder="Escreva Sua Resposta" id="content-@cont" autocomplete="false">
+                                            <button onclick="replyComment('content-@cont',@item.CommentsId)"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                    @{
+                                        cont++;
+                                    }
+                                    @if (item?.Replys?.Count > 0)
+                                    {
+                                        <div class="replysConteiner">
+                                            <button onclick="openResponses('replys-@cont',this)">
+                                                <i class="fa-solid fa-caret-down"></i>
+                                                Mostrar Respostas(@item.Replys.Count)
+                                            </button>
+                                            <div class="replys" id="replys-@cont">
+                                                <ul>
+                                                    @foreach (var reply in item.Replys)
+                                                    {
+                                                        <li>
+                                                            <div class="comment" style="border: none;">
+                                                                <div class="headerContent">
+                                                                    <img src="~/Imagens/UsersImg/@reply.User.ImgUrl" alt="">
+                                                                    <p>@reply.User.UserName</p>
+                                                                </div>
+                                                                <div>
+                                                                    <p>@reply.Mensagem</p>
+                                                                </div>
+
+                                                                <div class="addInfos">
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+                                                    }
+                                                </ul>
+                                            </div>
+                                        </div>
+
+
+                                    }
+
+
+
+                                </div>
+                            </li>
+                        }
+                        
+                    }
+                   
+                    
+                </ul>
+            </div>
+        }
+       
+    </div>
+</div>
+<div class="allcaps" id="allcaps">
+   
+
+</div>

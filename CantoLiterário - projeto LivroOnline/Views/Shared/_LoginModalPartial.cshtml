@@ -1,0 +1,49 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<User> signManager
+@inject UserManager<User> _userManager;
+
+@if (signManager.IsSignedIn(User))
+{
+    <div class="LoginModal" id="LoginModal">
+        <ul>
+            @if (User.IsInRole("Admin"))
+            {
+                <li>
+                    <a class="ButtonL" asp-area="Admin" asp-action="Index" asp-controller="Users">
+                        <i class="fa-solid fa-user-tie"></i>
+                        Admin
+                    </a>
+                </li>
+            }
+            <li>
+                <a class="ButtonL" asp-action="UserScreen" asp-controller="Profile" asp-route-Id="@_userManager.GetUserId(User)">
+                    <i class="fa-solid fa-user" asp-action="Index" asp-controller="Profile"></i>
+                    Perfil
+                </a>
+            </li>
+            <li>
+                <a class="ButtonL" asp-action="CreateBook" asp-controller="Book">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    Escrever
+                </a>
+            </li>
+            
+           
+            
+            <li>
+                <form  asp-action="LogOut" asp-controller="Account" method="post">
+                    <button class="ButtonL" type="submit">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Sair
+                    </button>
+                </form>
+                
+            </li>
+        </ul>
+    </div>
+}
+else{
+	<div>
+
+	</div>
+}

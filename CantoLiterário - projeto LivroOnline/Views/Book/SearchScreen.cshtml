@@ -1,0 +1,247 @@
+﻿@model List<BookDTO>
+
+ <style>
+        .center .header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:20px;
+        }
+        .header .searchBar{
+            border: 3px solid white;
+            width: 70%;
+            height: 2.3rem;
+            background-color: transparent;
+            border-radius: 10px;
+        }
+            .header .searchBar input{
+                width: 90%;
+                height: 100%;
+                background-color: transparent;
+                border: none;
+                color: white;
+                outline: none;
+            }
+        .header .buttons{
+            width: 90%;
+
+        }
+        .header .buttons ul{
+            display: flex;
+            position: relative;
+
+        }
+
+            .buttons ul li{
+                width: 33%;
+            }
+            .buttons button{
+                font-size: 16pt;
+                background-color: transparent;
+                color: white;
+                width: 100%;
+                border: none;
+                padding: 10px;
+                padding-bottom: 1px;
+                text-align: center;
+                cursor: pointer;
+            }
+        .mainContainer{
+            margin-top: 1rem;
+        }
+        .mainContainer h2:first-child{
+            margin-bottom: 1rem;
+            margin-left: 10px;
+        }
+
+.center .userElement{
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    padding:5px 20px;
+    border-radius: 10px;
+    gap:10px ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition:border-color .4s ease
+}
+.center .userElement:hover{
+    border-color: black;
+}
+    .userElement img{
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+    .userElement span{
+        text-align: center;
+    }
+.center .genderElement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid white;
+    width: 9rem;
+    height: 9rem;
+    border-radius:10px;
+    background-color: #32CD32;
+    font-size: 15pt;
+    
+}
+.genderElement span{
+    text-overflow:ellipsis;
+    overflow-x: hidden;
+    text-wrap: nowrap;
+}
+
+@@media (min-width:1200px) {
+    .center{
+        width: 70%;
+    }
+    .center .element{
+        width: 15rem;
+        height: 30rem;
+        font-size: 12pt;
+    }
+    .center .element img{
+        width: 100%;
+        height: 80%;
+    }
+    .center .userElement:hover{
+        border-color: black;
+    }
+        .userElement img{
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+    .center .header{
+        margin-top: 4rem;
+    }
+    .header .searchBar{
+            width: 100%;
+            height: 3rem;
+            background-color: white;
+            color:black;
+            font-size: 15pt;
+        }
+    .header .searchBar input{
+        width: 97%;
+        color: black;
+        font-size: 14pt;
+    }
+    .center .userElement{
+        border: 3px solid white;
+        display: flex;
+        flex-direction: column;
+        padding:5px 20px;
+        border-radius: 10px;
+        gap:10px ;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .center .genderElement{
+        width: 13rem;
+        height: 13rem;
+    
+    }
+    
+}
+    </style>
+<div class="center" style="flex-direction: column;background-color: transparent;">
+    <div class="header">
+        <div class="searchBar">
+            <input type="text" id="inputUser">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="buttons">
+            <ul>
+                <li>
+                    <button onclick="ItemCategoryClick(1)">
+                        Livros
+                    </button>
+                </li>
+                <li>
+                    <button onclick="ItemCategoryClick(2)">
+                        Contas
+                    </button>
+                </li>
+                <li>
+                    <button onclick="ItemCategoryClick(3)">
+                        Gêneros
+                    </button>
+                </li>
+                <li id="bar" style="width: 33%;">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mainContainer">
+        <h2>Resultado da Busca:</h2>
+        <div class="center" style="background-color: transparent;margin: 0;width: 100%;justify-content: center;" id="SearchResult">
+            @if(Model.Count > 0)
+            {
+                @foreach (var book in Model)
+                {
+                    <a class="element" asp-action="BookPage" asp-controller="Book" asp-route-titulo="@book.Name">
+                        <div style='text-align: center;' class='rate'>
+                            <i class="fa-solid fa-star" style='color: #FFD43B;'></i>
+                            <span>@book.AvarageVotes</span>
+                        </div>
+                        <img src="~/Imagens/capas/@book.ImgUrl" alt="">
+                        <div class="infos" bis_skin_checked="1">
+                            <span class="nome">@book.Name</span>
+                            <span class="author">
+                                @book.Author?.UserName
+                            </span>
+                        </div>
+                    </a>
+                }
+
+            }
+            else
+            {
+                <h2>Não Encontrado</h2>
+            }
+
+        </div>
+    </div>
+</div>
+<script>
+    var inputUser = document.getElementById('inputUser');
+    var currentSearch = 1;
+    function searchItem(type){
+        let bar = document.getElementById('bar');
+        let element = document.getElementById('SearchResult');
+        $.ajax({
+            type: "POST",
+            url: "/book/SearchItem",
+            data: {
+                searchString: inputUser.value,
+                numSearch: type
+            },
+
+            success: function (response) {
+                element.innerHTML = response;
+            },
+            error: function (xhr, status, error) {
+                alert('Error Interno');
+            }
+        });
+        let quant = type * 100 - 100;
+        bar.style.transform = `translateX(${quant}%)`;
+    }
+    function ItemCategoryClick(type) {
+        currentSearch = type;
+        searchItem(currentSearch);
+    }
+
+    inputUser.addEventListener('input', () => {
+        this.value
+        searchItem(currentSearch);
+
+    });
+   
+</script>
