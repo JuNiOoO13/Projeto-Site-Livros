@@ -138,68 +138,68 @@ main {
         color: white;
     }
 /*element styles */
-.center .element     {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.card {
     width: 10rem;
-    background-color: black;
-    color: white;
-    position:relative;
-    overflow:hidden;
-}
-.center .element::after{
-    content:""; 
-    width:100%;
-    height:100%;
-    position:absolute;  
-    z-index:999;
-    top:0;
-    left:0;
-    transform:translateY(-100%);
-    background-color:rgb(0,0,0,0.44);
-    transition:transform .7s ease-out;
-}
-    .center .element:hover::after {
-        position: absolute;
-        transform: translateY(0%);
-    }
-
-.element img {
-    width: 100%;
     height: 15rem;
-}
-
-.element span {
-    text-align: center;
-}
-
-    .element .infos{
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-content:center;
-        gap:0;
-    }
-    .element .infos .nome{
-        width:100%;
-        text-overflow:ellipsis;
-        white-space:nowrap;
-        overflow:hidden;
-    }
-    .element span:nth-child(2) {
-        color: rgb(150, 150, 150);
-    }
-
-
-
-*Tela Do livro*/
-/*parte central*/
-.center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border-radius: 20px;
+    position: relative;
     color: white;
-    gap: 20px;
+    display: flex;
+    border:1px solid gray;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    overflow: hidden;
+    font-size: large;
+    box-shadow: inset 1px -75px 100px black;
+    align-items: center;
+    cursor: pointer;
+    transition: box-shadow 0.5s ease-in;
 }
+
+    .card h3 {
+        transition: transform 0.2s cubic-bezier(.6,.38,0,1.08);
+        font-weight: bold;
+    }
+
+    .card:hover h3 {
+        transform: translateY(-30%);
+    }
+
+    .card:hover {
+        box-shadow: inset 1px -105px 120px black;
+    }
+
+    .card img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .card .infos {
+        display: flex;
+        font-size: 13pt;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+        .card .infos i {
+            font-size: 10pt;
+        }
+
+i.fa-star {
+    color: yellow;
+}
+
+
+
+/*Tela Do livro*/
+
 
 .center .mainElement {
     display: flex;
@@ -1449,6 +1449,10 @@ input:-webkit-autofill:focus {
 }
 /*Media Query*/
 @media (min-width: 1200px){
+    .card{
+        width:16rem;
+        height:23rem;
+    }
     .text {
         font-size: 13pt;
     }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CantoLiterário - projeto LivroOnline")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d59b060fdb4af2447410ca0bbef41e3757726d27")]
 [assembly: System.Reflection.AssemblyProductAttribute("CantoLiterário - projeto LivroOnline")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CantoLiterário - projeto LivroOnline")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

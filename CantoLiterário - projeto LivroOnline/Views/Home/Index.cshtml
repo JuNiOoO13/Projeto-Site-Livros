@@ -4,22 +4,20 @@
 @model List<Book>;
 
 <h style="text-align:center;color:white">Recomendados</h>
-<div class="center" style="justify-content:center;background-color:transparent">
+<div class="center" style="justify-content:center;background-color:transparent;width:90%">
             
             @foreach(var book in Model)
             {
 
-            <a asp-action="BookPage" asp-controller="Book" asp-route-titulo="@book.Name" class="element">
-                    <div style="text-align: center;" class="rate">
-                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
-                        <span>@book.AvarageVotes</span>
-                    </div>
-                    <img src="./Imagens/capas/@book.ImgUrl" alt="">
+                <a class="card" asp-action="BookPage" asp-controller="Book" asp-route-titulo="@book.Name">
+                    <img src="~/Imagens/capas/@book.ImgUrl" alt="">
+                    <h3>@book.Name</h3>
+                    <h4 style="color:darkgrey">@book.Author?.UserName</h4>
                     <div class="infos">
-                        <span class="nome">@book.Name</span>
-                        <span class="author">
-                            @book.Author.UserName
-                           </span>
+                        <div style="display: flex;gap:3px;margin-top:10px;align-items: center;position: absolute;top:0;left: 10px;">
+                            @book.AvarageVotes<i class="fa-solid fa-star"></i>
+
+                        </div>
                     </div>
                 </a>
             }

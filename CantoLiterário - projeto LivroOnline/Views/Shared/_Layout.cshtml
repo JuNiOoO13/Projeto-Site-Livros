@@ -6,6 +6,15 @@
     <title>Canto Literário - @ViewData["Title"] </title>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/CantoLiterário___projeto_LivroOnline.styles.css" asp-append-version="true" />
+    <style>
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        input:-webkit-autofill:active {
+            -webkit-box-shadow: 0 0 0 30px white inset !important;
+            -webkit-text-fill-color: black !important;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,7 +29,7 @@
 
                             </a>
                         </li>
-                        <li>=
+                        <li>
                             <a class="lupa" asp-action="SearchScreen" asp-controller="Book" asp-route-searchString=" ">
                                 <i style="color:white; font-size:14pt" class="fa-solid fa-magnifying-glass"></i>
                                

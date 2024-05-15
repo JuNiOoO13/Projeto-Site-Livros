@@ -342,11 +342,17 @@ function openResponses(id, button) {
     }
 }
 
-//Admin Area Script
+
 function SearchBook(id) {
     searchField = document.getElementById(id);
     searchValue = searchField.value != '' ? searchField.value : '\u0020';
     window.location.href = `${window.location.origin}/Pesquisa/${searchValue}`;
+}
+try {
+    ChangeContent(1);
+}
+catch (error) {
+    console.log(error);
 }
 
 

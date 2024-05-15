@@ -273,3 +273,4 @@ C:\Users\junio\source\repos\CantoLiterário - projeto LivroOnline\CantoLiterári
 C:\Users\junio\source\repos\CantoLiterário - projeto LivroOnline\CantoLiterário - projeto LivroOnline\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\junio\source\repos\CantoLiterário - projeto LivroOnline\CantoLiterário - projeto LivroOnline\bin\Debug\net8.0\Microsoft.JSInterop.dll
 C:\Users\junio\source\repos\CantoLiterário - projeto LivroOnline\CantoLiterário - projeto LivroOnline\obj\Debug\net8.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\junio\source\repos\CantoLiterário - projeto LivroOnline\CantoLiterário - projeto LivroOnline\obj\Debug\net8.0\CantoLiterário - projeto LivroOnline.sourcelink.json

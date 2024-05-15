@@ -185,17 +185,16 @@
             {
                 @foreach (var book in Model)
                 {
-                    <a class="element" asp-action="BookPage" asp-controller="Book" asp-route-titulo="@book.Name">
-                        <div style='text-align: center;' class='rate'>
-                            <i class="fa-solid fa-star" style='color: #FFD43B;'></i>
-                            <span>@book.AvarageVotes</span>
-                        </div>
+
+                    <a class="card" asp-action="BookPage" asp-controller="Book" asp-route-titulo="@book.Name">
                         <img src="~/Imagens/capas/@book.ImgUrl" alt="">
-                        <div class="infos" bis_skin_checked="1">
-                            <span class="nome">@book.Name</span>
-                            <span class="author">
-                                @book.Author?.UserName
-                            </span>
+                        <h3>@book.Name</h3>
+                        <h4 style="color:darkgrey">@book.Author?.UserName</h4>
+                        <div class="infos">
+                            <div style="display: flex;gap:3px;margin-top:10px;align-items: center;position: absolute;top:0;left: 10px;">
+                                @book.AvarageVotes<i class="fa-solid fa-star"></i>
+
+                            </div>
                         </div>
                     </a>
                 }
